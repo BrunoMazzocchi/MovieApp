@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="ni.edu.uca.peliculas.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/irAClasificacion"
+            app:destination="@id/clasificacionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clasificacionFragment"
+        android:name="ni.edu.uca.peliculas.clasificacionFragment"
+        android:label="fragment_clasificacion"
+        tools:layout="@layout/fragment_clasificacion" />
+</navigation>
