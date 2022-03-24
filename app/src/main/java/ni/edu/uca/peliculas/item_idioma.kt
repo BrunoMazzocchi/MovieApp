@@ -5,8 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
-import ni.edu.uca.peliculas.databinding.FragmentMenuBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -15,17 +13,19 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [MenuFragment.newInstance] factory method to
+ * Use the [item_idioma.newInstance] factory method to
  * create an instance of this fragment.
  */
-class MenuFragment : Fragment() {
+class item_idioma : Fragment() {
     // TODO: Rename and change types of parameters
-    lateinit var fBinding: FragmentMenuBinding
+    private var param1: String? = null
+    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-
+            param1 = it.getString(ARG_PARAM1)
+            param2 = it.getString(ARG_PARAM2)
         }
     }
 
@@ -34,22 +34,9 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        fBinding = FragmentMenuBinding.inflate(layoutInflater )
-        return fBinding.root
+        return inflater.inflate(R.layout.fragment_item_idioma, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?){
-        super.onViewCreated(view, savedInstanceState)
-        fBinding.BtnClasificacion.setOnClickListener{
-            it.findNavController().navigate(R.id.irAClasificacion)
-        }
-        fBinding.BtnGenero.setOnClickListener {
-            it.findNavController().navigate(R.id.irAGenero)
-        }
-        fBinding.BtnIdioma.setOnClickListener {
-            it.findNavController().navigate(R.id.irAIdioma)
-        }
-    }
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -57,12 +44,12 @@ class MenuFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment MenuFragment.
+         * @return A new instance of fragment item_idioma.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            MenuFragment().apply {
+            item_idioma().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
