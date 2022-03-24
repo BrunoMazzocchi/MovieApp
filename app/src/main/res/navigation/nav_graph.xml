@@ -18,7 +18,10 @@
             app:destination="@id/generoFragment" />
         <action
             android:id="@+id/irAIdioma"
-            app:destination="@id/item_idioma" />
+            app:destination="@id/idiomaFragment" />
+        <action
+            android:id="@+id/irANacionalidad"
+            app:destination="@id/nacionalidadFragment" />
     </fragment>
     <fragment
         android:id="@+id/clasificacionFragment"
@@ -31,8 +34,13 @@
         android:label="fragment_genero"
         tools:layout="@layout/fragment_genero" />
     <fragment
-        android:id="@+id/item_idioma"
+        android:id="@+id/idiomaFragment"
         android:name="ni.edu.uca.peliculas.item_idioma"
         android:label="fragment_item_idioma"
         tools:layout="@layout/fragment_item_idioma" />
+    <fragment
+        android:id="@+id/nacionalidadFragment"
+        android:name="ni.edu.uca.peliculas.nacionalidadFragment"
+        android:label="fragment_nacionalidad"
+        tools:layout="@layout/fragment_nacionalidad" />
 </navigation>
