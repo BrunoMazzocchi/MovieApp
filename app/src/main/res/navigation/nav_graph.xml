@@ -13,10 +13,18 @@
         <action
             android:id="@+id/irAClasificacion"
             app:destination="@id/clasificacionFragment" />
+        <action
+            android:id="@+id/irAGenero"
+            app:destination="@id/generoFragment" />
     </fragment>
     <fragment
         android:id="@+id/clasificacionFragment"
         android:name="ni.edu.uca.peliculas.clasificacionFragment"
         android:label="fragment_clasificacion"
         tools:layout="@layout/fragment_clasificacion" />
+    <fragment
+        android:id="@+id/generoFragment"
+        android:name="ni.edu.uca.peliculas.generoFragment"
+        android:label="fragment_genero"
+        tools:layout="@layout/fragment_genero" />
 </navigation>
