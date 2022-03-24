@@ -22,6 +22,9 @@
         <action
             android:id="@+id/irANacionalidad"
             app:destination="@id/nacionalidadFragment" />
+        <action
+            android:id="@+id/irAPelicula"
+            app:destination="@id/peliculaFragment" />
     </fragment>
     <fragment
         android:id="@+id/clasificacionFragment"
@@ -43,4 +46,9 @@
         android:name="ni.edu.uca.peliculas.nacionalidadFragment"
         android:label="fragment_nacionalidad"
         tools:layout="@layout/fragment_nacionalidad" />
+    <fragment
+        android:id="@+id/peliculaFragment"
+        android:name="ni.edu.uca.peliculas.peliculaFragment"
+        android:label="fragment_pelicula"
+        tools:layout="@layout/fragment_pelicula" />
 </navigation>
