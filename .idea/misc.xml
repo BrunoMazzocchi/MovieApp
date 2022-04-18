@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/fragment_agregar_genero.xml" value="0.1" />
         <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/fragment_clasificacion.xml" value="0.1322463768115942" />
-        <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/fragment_genero.xml" value="0.1322463768115942" />
+        <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/fragment_genero.xml" value="0.5" />
         <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/fragment_item_idioma.xml" value="0.1322463768115942" />
         <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/fragment_menu.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/fragment_nacionalidad.xml" value="0.1" />
@@ -12,6 +14,7 @@
         <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/item_clasificacion.xml" value="0.1322463768115942" />
         <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/item_genero.xml" value="0.1" />
         <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/item_idioma.xml" value="0.1322463768115942" />
+        <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/item_list.xml" value="0.1" />
         <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/item_nacionalidad.xml" value="0.1" />
         <entry key="..\:/Users/Bemaz/Documents/IS ISI/DAMO2/Peliculas/app/src/main/res/layout/item_pelicula.xml" value="0.1" />
         <entry key="..\:/Users/Isi27/AndroidStudioProjects/Peliculas/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />

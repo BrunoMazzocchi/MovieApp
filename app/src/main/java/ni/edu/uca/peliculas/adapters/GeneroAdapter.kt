@@ -1,38 +1,39 @@
 package ni.edu.uca.peliculas.adapters
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import ni.edu.uca.peliculas.R
 import ni.edu.uca.peliculas.databinding.ItemClasificacionBinding
 import ni.edu.uca.peliculas.databinding.ItemGeneroBinding
 import ni.edu.uca.peliculas.models.Clasificacion
 import ni.edu.uca.peliculas.models.ClasificacionItem
+import ni.edu.uca.peliculas.models.Genero
 import ni.edu.uca.peliculas.models.GeneroItem
 
-class GeneroAdapter(val generoLista: List<GeneroItem>): RecyclerView.Adapter<GeneroAdapter.GeneroHolder>() {
-    inner class GeneroHolder(val binding: ItemGeneroBinding): RecyclerView.ViewHolder(binding.root){
-        fun bind(genero: GeneroItem){
-            with(binding){
-                TxtNombre.text = genero.nombre
-                TxtId.text = genero.idGenero.toString()
-            }
-        }
-    }
-
+class GeneroAdapter(val compra:List<Genero>):RecyclerView.Adapter<GeneroAdapter.GeneroHolder>()  {
     override fun onCreateViewHolder(
-        parent: ViewGroup, viewType: Int
+        parent: ViewGroup,
+        viewType: Int
     ): GeneroHolder {
-        val binding = ItemGeneroBinding.inflate(
-            LayoutInflater.from(parent.context),
-            parent,
-            false
-        )
-        return GeneroHolder(binding)
+        var view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_list, null, false)
+        return GeneroHolder(view)
     }
 
     override fun onBindViewHolder(holder: GeneroHolder, position: Int) {
-        holder.bind(generoLista[position])
+        val current =compra[position]
+        holder.tvTitulo.text = current.nombre
+        holder.tvSubtitulo.text ="ID = ${ current.id_Genero.toString()}"
     }
 
-    override fun getItemCount(): Int = generoLista.size
+    override fun getItemCount(): Int = compra.size
+
+    class GeneroHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val tvTitulo: TextView = itemView.findViewById(R.id.item_title)
+        val tvSubtitulo: TextView = itemView.findViewById(R.id.item_sub)
+
+    }
+
 }

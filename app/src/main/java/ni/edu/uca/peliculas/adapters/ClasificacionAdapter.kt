@@ -17,7 +17,6 @@ class ClasificacionAdapter(val clasificacionLista: List<ClasificacionItem>): Rec
             }
         }
     }
-
     override fun onCreateViewHolder(
         parent: ViewGroup, viewType: Int
     ): ClasificacionHolder {

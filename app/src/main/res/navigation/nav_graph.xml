@@ -33,9 +33,13 @@
         tools:layout="@layout/fragment_clasificacion" />
     <fragment
         android:id="@+id/generoFragment"
-        android:name="ni.edu.uca.peliculas.generoFragment"
+        android:name="ni.edu.uca.peliculas.GeneroFragment"
         android:label="fragment_genero"
-        tools:layout="@layout/fragment_genero" />
+        tools:layout="@layout/fragment_genero" >
+        <action
+            android:id="@+id/action_generoFragment_to_agregarGeneroFragment"
+            app:destination="@id/agregarGeneroFragment" />
+    </fragment>
     <fragment
         android:id="@+id/idiomaFragment"
         android:name="ni.edu.uca.peliculas.item_idioma"
@@ -51,4 +55,13 @@
         android:name="ni.edu.uca.peliculas.peliculaFragment"
         android:label="fragment_pelicula"
         tools:layout="@layout/fragment_pelicula" />
+    <fragment
+        android:id="@+id/agregarGeneroFragment"
+        android:name="ni.edu.uca.peliculas.AgregarGeneroFragment"
+        android:label="fragment_agregar_genero"
+        tools:layout="@layout/fragment_agregar_genero" >
+        <action
+            android:id="@+id/action_agregarGeneroFragment_to_generoFragment"
+            app:destination="@id/generoFragment" />
+    </fragment>
 </navigation>
